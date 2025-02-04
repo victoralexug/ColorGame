@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #f7eeee;
+    background: #f9f9f9;
   }
   
   .game-container {
@@ -19,6 +19,7 @@
     text-align: center;
     border: solid 2px #333;
     border-radius: 10px;
+    background: #f7eeee;
   }
 
   .game-container h1{
