@@ -1,0 +1,81 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f7eeee;
+  }
+  
+  .game-container {
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  #colorBox {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border: 3px solid black;
+    background: lightgray;
+  }
+  
+  #colorOptionsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .colorOption {
+    width: 70px;
+    height: 70px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .colorOption:hover {
+    transform: scale(1.1);
+  }
+  
+  #gameStatus {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background: #555;
+  }
+
+  /* Bounce celebration for correct guesses */
+  .bounce {
+    animation: bounce 0.5s ease-in-out;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
